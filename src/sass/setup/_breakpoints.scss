@@ -1,0 +1,15 @@
+/********************
+BREAKPOINTS
+********************/
+
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media (min-width: 600px) { @content; }
+  } 
+  @if $point == medium {
+    @media (min-width: 950px) { @content; }
+  } 
+  @else if $point == large {
+    @media (min-width: 1024px) { @content; }
+  } 
+}

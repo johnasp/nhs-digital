@@ -1,0 +1,130 @@
+//@import 'setup/_reset';
+@import 'setup/_breakpoints';
+@import 'setup/_mixins';
+@import 'setup/_vars';
+
+html {
+    font-family: arial, sans-serif;
+    font-size: 62.5%;
+}
+
+h1 {
+    color: $nhsBlue;
+    font-size: 20px;
+}
+
+.process-repo {
+    @include breakpoint(small) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a:nth-child(even) {
+            margin-left: 2%;
+        }
+    }
+
+    @include breakpoint(medium) {
+        a {
+            margin-left: 2%;
+        }
+    }
+
+    a {
+        @include breakpoint(small) {
+            flex-basis: 40%;
+        }
+
+        @include breakpoint(medium) {
+            flex-basis: 25%;
+        }
+
+        background: $nhsBlue;
+        padding: $padding/1.2;
+        text-decoration: none;
+
+        @include breakpoint(small) {
+            padding: $padding*1.2;
+        }
+
+        @include breakpoint(large) {
+            padding: $padding*1.4;
+        }
+
+        margin-bottom: 2rem;
+        transition: 0.4s;
+        display: block;
+
+
+
+        h2 {
+            color: $nhsWarmYellow;
+            font-weight: normal;
+            margin: 0 0 3px 0;
+            font-size: 20px;
+
+            @include breakpoint(small) {
+                font-size: 22px;
+            }
+
+            @include breakpoint(medium) {
+                font-size: 26px;
+            }
+
+            @include breakpoint(large) {
+                font-size: 28px;
+            }
+        }
+
+        p {
+            color: white;
+            font-size: 14px;
+            line-height: 1.2em;
+            margin-bottom: 12px;
+
+            @include breakpoint(small) {
+                font-size: 16px;
+                width: 50%;
+            }
+
+            @include breakpoint(medium) {
+                font-size: 18px;
+                width: 60%;
+            }
+
+            @include breakpoint(large) {
+                font-size: 20px;
+                width: 70%;
+            }
+        }
+
+        &:hover {
+            background: lighten($nhsBlue, 5%);
+            text-decoration: none;
+        }
+    }
+
+    .dsc {
+        background: url(/img/ico-dsc.svg) no-repeat right;
+    }
+
+    .i-d {
+        background: url(/img/ico-id.svg) no-repeat right;
+    }
+
+    .i-r {
+        background: url(/img/ico-ir.svg) no-repeat right;
+    }
+
+    .ops {
+        background: url(/img/ico-ops.svg) no-repeat right;
+    }
+
+    .dso {
+        background: url(/img/ico-dso.svg) no-repeat right;
+    }
+
+    .feedback {
+        background: url(/img/ico-feedback.svg) no-repeat right;
+    }
+}

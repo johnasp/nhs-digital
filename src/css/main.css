@@ -1,0 +1,94 @@
+/********************
+BREAKPOINTS
+********************/
+/********************
+MIXINS
+********************/
+/********************
+VARS
+********************/
+html {
+  font-family: arial, sans-serif;
+  font-size: 62.5%; }
+
+h1 {
+  color: #005EB8;
+  font-size: 20px; }
+
+@media (min-width: 600px) {
+  .process-repo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .process-repo a:nth-child(even) {
+      margin-left: 2%; } }
+@media (min-width: 950px) {
+  .process-repo a {
+    margin-left: 2%; } }
+.process-repo a {
+  background: #005EB8;
+  padding: 1.6666666667rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: 0.4s;
+  display: block; }
+  @media (min-width: 600px) {
+    .process-repo a {
+      flex-basis: 40%; } }
+  @media (min-width: 950px) {
+    .process-repo a {
+      flex-basis: 25%; } }
+  @media (min-width: 600px) {
+    .process-repo a {
+      padding: 2.4rem; } }
+  @media (min-width: 1024px) {
+    .process-repo a {
+      padding: 2.8rem; } }
+  .process-repo a h2 {
+    color: #FFB81C;
+    font-weight: normal;
+    margin: 0 0 3px 0;
+    font-size: 20px; }
+    @media (min-width: 600px) {
+      .process-repo a h2 {
+        font-size: 22px; } }
+    @media (min-width: 950px) {
+      .process-repo a h2 {
+        font-size: 26px; } }
+    @media (min-width: 1024px) {
+      .process-repo a h2 {
+        font-size: 28px; } }
+  .process-repo a p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.2em;
+    margin-bottom: 12px; }
+    @media (min-width: 600px) {
+      .process-repo a p {
+        font-size: 16px;
+        width: 50%; } }
+    @media (min-width: 950px) {
+      .process-repo a p {
+        font-size: 18px;
+        width: 60%; } }
+    @media (min-width: 1024px) {
+      .process-repo a p {
+        font-size: 20px;
+        width: 70%; } }
+  .process-repo a:hover {
+    background: #006bd2;
+    text-decoration: none; }
+.process-repo .dsc {
+  background: url(/img/ico-dsc.svg) no-repeat right; }
+.process-repo .i-d {
+  background: url(/img/ico-id.svg) no-repeat right; }
+.process-repo .i-r {
+  background: url(/img/ico-ir.svg) no-repeat right; }
+.process-repo .ops {
+  background: url(/img/ico-ops.svg) no-repeat right; }
+.process-repo .dso {
+  background: url(/img/ico-dso.svg) no-repeat right; }
+.process-repo .feedback {
+  background: url(/img/ico-feedback.svg) no-repeat right; }
+
+/*# sourceMappingURL=main.css.map */
